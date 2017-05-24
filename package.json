@@ -1,21 +1,28 @@
 {
-  "name": "myfile",
-  "version": "1.0.0",
-  "description": "json",
-  "main": "app.js",
+  "name": "fristwebpack",
+  "version": "1.1.2",
+  "description": "Noode Tutorial",
+  "main": "server.js",
   "dependencies": {
     "app": "^0.1.0",
+    "gulp": "^3.9.1",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
     "webpack": "^2.6.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "keywords": [
-    "demo"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuramalicious/node.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuramalicious/node/issues"
+  },
+  "homepage": "https://github.com/kuramalicious/node#readme"
 }

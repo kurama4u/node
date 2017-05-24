@@ -63,23 +63,38 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = "kurama";
+function subtract(x, y){
+    return x - y;
+}
+module.exports = subtract; 
 
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+function addition(x, y){
+    return x + y;
+}
+module.exports = addition;
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var message = __webpack_require__(0);
+var subtract = __webpack_require__(0);
+var addition = __webpack_require__(1);
 
-alert(message);
+alert("subtract:" + subtract(3, 2));
+alert("addition:" + addition(3, 2));
+
 
 /***/ })
 /******/ ]);
